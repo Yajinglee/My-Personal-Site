@@ -5,13 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Site</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#summary">My Personal Site</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#work-experience">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#personal-project">Personal Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#certification">Certification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#contact-me">Get In Touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 <!-- Summary -->
-<section id="summary" class="px-4 py-3 text-center">
+<section id="summary" class="px-4 pt-5 pb-3 text-center">
   <img class="d-block mx-auto mb-4 profile-image" src="./images/profile-image.jpeg" alt="profile-image">
   <h1 class="display-5 fw-bold text-body-emphasis">👋 Hi, I'm Yajing Li</h1>
   <div class="col-lg-8 mx-auto mt-5">
@@ -37,7 +61,7 @@
 </section> 
 
 <!-- Work Experience -->
-<section id="working-experience">
+<section id="work-experience">
     <div class="px-4 pt-5 text-center">
         <h2 class="text-body-emphasis">Work Experience</h2>
     </div>
@@ -200,7 +224,7 @@
         <h2 class="featurette-heading fw-normal lh-1 mb-4">Retail business analysis<span class="text-body-secondary"> | Power BI</span></h2>
         <p class="lead mb-5">This project was aimed to deliver a business intelligence solution and gain actionable insights from 8 csv files containing products, customers, sales and returns data of a retail business named Adventure Works.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2">More details</button>
+          <a type="button" class="btn btn-secondary btn-lg px-4 me-md-2" href="./projects.html">More details</a>
           <a type="button" class="btn btn-outline-secondary btn-lg px-4" download="AdventureWorks_Report.pbix" href="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/AdventureWorks_Report.pbix">Downlaod file</a>
         </div>
       </div>
@@ -240,7 +264,7 @@
         <h2 class="featurette-heading fw-normal lh-1 mb-4">Web Scraping GoodReads.com<span class="text-body-secondary"> | Python, Tableau</span></h2>
         <p class="lead mb-5">The project was aimed to scrape all the books that won the Choice Awarded on GoodRead.com and build a book selection dashboard for book lovers to choose the books and authors by awards, year, and ratings for their next reading.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2">More details</button>
+          <a type="button" class="btn btn-secondary btn-lg px-4 me-md-2" href="./projects.html">More details</a>
           <a type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="window.open('https://github.com/Yajinglee/Web-Scraping-Project','_blank')">Github repository</a>
         </div>
       </div>
@@ -278,7 +302,7 @@
         <p class="lead">This project aimed to use SQL queries to explore the DVD rental dataset to gain an understanding of inventory level, consumer behavior, store sales and performance.</p>
         <p class="lead mb-5">Dataset was connected in MySQL Workbench, and then Jupyter Notebook was set up to access data from MySQL databases by loading the SQL magic jupyter notebook extension.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2">More details</button>
+          <a type="button" class="btn btn-secondary btn-lg px-4 me-md-2" href="./projects.html">More details</a>
           <a type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="window.open('https://github.com/Yajinglee/SQL-Projects','_blank')">Github repository</a>
         </div>
       </div>
@@ -314,7 +338,7 @@
   </div>
 </section>
 <!-- Education & certification -->
-<section id="education" class="pt-5">
+<section id="certification" class="pt-5">
   <div class="pt-3 text-center">
     <h2 class="text-body-emphasis">Certification</h2>
   </div>
@@ -359,11 +383,9 @@
           I'm currently on an exciting journey of learning web development!
         </p>
         <p class="col-lg-11 mx-auto mb-4 lead">
-          Keep exploring, keep coding, and let's build the future together!
+          Keep learning, keep coding!
         </p>
-        <button class="btn btn-light px-5 mb-5 mt-4" type="button">
-          Contact Me
-        </button>
+        <a href="mailto:yajing.webdev@gmail.com" target="_blank" class="btn btn-light px-5 mb-5 mt-4" type="button">Contact Me</a>
       </div>
     </div>
   </div>
