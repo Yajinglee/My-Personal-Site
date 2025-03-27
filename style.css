@@ -2,6 +2,10 @@
     background-color: #EEF5FF;
 }
 
+#certification {
+    background-color: #EEF5FF;
+}
+
 #personal-project {
     background-color: #EEF5FF;
 }
@@ -46,12 +50,12 @@ li.borderless {
 .carousel-control-next-icon:after
 {
   content: '>';
-  font-size: 100px;
+  font-size: 70px;
   color: black;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
-  font-size: 100px;
+  font-size: 70px;
   color: black;
 }
