@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#summary">Yajing Li</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html#work-experience">Work Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html#personal-project">Personal Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html#certification">Certification</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html#learning">My Learning Journey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html#contact-me">Get In Touch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+<section class="px-4 py-3 mt-5">
+  <div class="px-4 pt-5 text-center">
+    <h2 class="featurette-heading fw-normal lh-1 mb-4">Web Scraping & Dashboard<span class="text-body-secondary"> | Python, Tableau</span></h2>
+  </div>
+  <div class="container">
+    <hr class="featurette-divider">
+
+      <div class="col-md">
+
+        <h2 class="featurette-heading fw-normal lh-1 my-4">Project Description</span></h2>
+        <p class="lead mb-4">The project was aimed to scrape all the books that won the Choice Awarded on GoodRead.com and build a book selection dashboard for book lovers to choose the books and authors by awards, year, and ratings for their next reading.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="window.open('https://github.com/Yajinglee/Web-Scraping-Project','_blank')">Github repository</a>
+        </div>
+
+        <h2 class="featurette-heading fw-normal lh-1 my-4">Project Details</span></h2>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">Retrieved 4000+ awarded book information from the website and saved to two csv files containing awards and book details using Beautiful Soup, Selenium, and pandas.</p>
+            <p class="lead mb-2">Replaced values, split/added/renamed/dropped columns, and dropped duplicated values using pandas.</p>
+            <p class="lead mb-2">Explored awarded books and authors through data manipulation and visualization using pandas, matplotlib, and word cloud.</p>
+            <p class="lead mb-2">Built interactive dashboard to filter popular books and authors by year and award using Tableau.</p>
+          </div>                
+        </li>
+
+        <h2 class="featurette-heading fw-normal lh-1 my-4">DataFrame</span></h2>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">Awarded books dataframe</p>
+            <img src="./images/Awarded_Books.png" class="d-block w-100" alt="Awarded_Books">
+            <p class="lead mb-2">Book details dataframe</p>
+            <img src="./images/Book_Details.png" class="d-block w-100" alt="Book_Details">
+          </div>                
+        </li>
+
+        <h2 class="featurette-heading fw-normal lh-1 my-4">Word cloud</span></h2>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">Python wordcloud library was used to create the word clouds.</p>
+            <p class="lead mb-2">The screenshot below shows the books that won the 'Best fiction' award in 2011 that has ratings above 3.5.</p>
+            <img src="./images/best_fiction_book_wordcloud.png" class="d-block w-100" alt="best_fiction_book_wordcloud">
+          </div>                
+        </li>
+
+        <h2 class="featurette-heading fw-normal lh-1 my-4"><a href="https://public.tableau.com/app/profile/yajing.li/viz/GoodReadsAwardedBooks/Dashboard?publish=yes">Tableau Dashboard</a></span></h2>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">The screenshot below shows the top books and authors winning the 'Best fantasy books' award with the rating above 4.5 in 2022</p>
+            <img src="./images/Dashboard.png" class="d-block w-100" alt="dashboard">
+          </div>                
+        </li>
+      </div>
+  </div>
+  <div class="px-4 pt-5 text-center">
+    <p class="lead mb-4">
+      <a class="nav-link active" aria-current="page" href="./index.html#personal-project">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-skip-backward-fill mx-4" viewBox="0 0 16 16">
+      <path d="M.5 3.5A.5.5 0 0 0 0 4v8a.5.5 0 0 0 1 0V8.753l6.267 3.636c.54.313 1.233-.066 1.233-.697v-2.94l6.267 3.636c.54.314 1.233-.065 1.233-.696V4.308c0-.63-.693-1.01-1.233-.696L8.5 7.248v-2.94c0-.63-.692-1.01-1.233-.696L1 7.248V4a.5.5 0 0 0-.5-.5"/>
+    </svg>Back to Personal Projects List</a></p>
+  </div>
+</section>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
