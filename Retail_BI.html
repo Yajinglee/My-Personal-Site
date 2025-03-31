@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#summary"><img style="height: 30px" class="mx-2 rounded-circle"
+          src="./images/profile-image.jpeg" alt="profile-image">Yajing Li</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="./index.html#skills">Skills</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="./index.html#certification">Certification</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="./index.html#education">Education</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="./index.html#work-experience">Work Experience</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="./index.html#personal-project">Personal Projects</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="./index.html#learning-journey">My Learning Journey</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="./index.html#contact-me">Get In Touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="px-4 py-3 mt-5">
+
+    <div class="px-4 pt-5 text-center">
+      <h2 class="featurette-heading fw-normal lh-1 mb-4">Retail business analysis<span class="text-body-secondary"> |
+          Power BI</span></h2>
+    </div>
+    <div class="container">
+      <hr class="featurette-divider">
+      <div class="col-md" id="PowerBI">
+        <h2 class="featurette-heading fw-normal lh-1 my-4">Project Description</span></h2>
+        <p class="lead mb-4">This project was aimed to deliver a business intelligence solution and gain actionable
+          insights from 8 csv files containing products, customers, sales and returns data of a retail business named
+          Adventure Works.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a type="button" class="btn btn-outline-secondary btn-lg px-4" download="AdventureWorks_Report.pbix"
+            href="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/AdventureWorks_Report.pbix">Downlaod
+            file</a>
+        </div>
+        <h2 class="featurette-heading fw-normal lh-1 my-4">Project Details</span></h2>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">Loaded the data and created data model using snowflake schema from 6 dimensional tables
+              and 2 fact tables.</p>
+            <p class="lead mb-2">Transformed data, created columns and measures with Power Query and DAX calculation.
+            </p>
+            <p class="lead mb-2">Built interactive reports to visualize sales performance with slicers, KPIs, drilldown,
+              and various charts including tree map, line and bar chart, donut chart and gauge chart.</p>
+          </div>
+        </li>
+        <h2 class="featurette-heading fw-normal lh-1 my-4">Data Model</span></h2>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">AW_Sales and AW_Returns are the 2 facts tables.</p>
+            <p class="lead mb-2">Customer, Territory, Calendar, Product, Product Category, Product Subcategory are the 6
+              dimension tables.</p>
+            <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/Data_model.png" class="d-block w-100" alt="data-model">
+          </div>
+        </li>
+        <h2 class="featurette-heading fw-normal lh-1 my-4">Dashboards</span></h2>
+        <h5 class="featurette-heading fw-normal lh-1 my-4">1. Executive Summary</span></h5>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">The executive summary dashboard provided an overview of the sales performance across
+              difference countries from 2015 to June 2017.</p>
+            <div id="carousel1" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/2015_executive_summary.png" class="d-block w-100" alt="2015-executive-summary">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/2016_executive_summary.png" class="d-block w-100" alt="2016-executive-summary">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/2017_executive_summary.png" class="d-block w-100" alt="2017-executive-summary">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <h5 class="featurette-heading fw-normal lh-1 my-4">Insights</span></h5>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">Bike was the only product Adventure Works sold in 2015. Starting from June 2016, it
+              introduced new products including accessories and clothes, which could be one of the major reasons of the
+              profit increase by 53% comparing from 2015 to 2016.</p>
+            <p class="lead mb-2">In 2016, bike is the most ordered product category in Australia and least ordered
+              product category in Canada, and the possible reason behind this could be that the weather condition in
+              Australia is more suitable for biking all year round, whereas in Canada, only few months in a year is good
+              for outdoor biking.</p>
+            <p class="lead mb-2">The United States and Australia are the top 2 countries that brought the most profit,
+              and there was also a 100% increase in profit in countries in Europe from 2015 to 2016.</p>
+            <p class="lead mb-2">Total product sold in 2017 already exceed the amount 2016 by 25% even thought there
+              were only 6 months data in 2017. The profit in 2017 is almost equal to it in 2016. So, Adventure Works had
+              a huge growth in 2017.</p>
+            <p class="lead mb-2">Looking at the products, Water bottle is the product that Adventure Works sold for the
+              most amount, and all the mountain bikes are the top revenue generators for Adventure Works.</p>
+          </div>
+        </li>
+        <h5 class="featurette-heading fw-normal lh-1 my-4">2. Product Details</span></h5>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">The product detail dashboard provided the detailed sales information about one specific
+              product. The product name can be selected on the executive summary dashboard, and drilled through to the
+              product detail dashboard for more information.</p>
+            <p class="lead mb-2">I'll take mountain bike 200 black 42, which is one of the most profitable products, as
+              an example. I would like to see how the sales performance looks like comparing with June 2016 and June
+              2017 in Australia.</p>
+            <div id="carousel2" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/2016_june_mountain_bike.png" class="d-block w-100" alt="2016-mountain-bike">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/2017_june_mountain_bike.png" class="d-block w-100" alt="2017-mountain-bike">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <h5 class="featurette-heading fw-normal lh-1 my-4">Insights</span></h5>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">Both revenue and number of orders of mountain bike 200 black 42 in 2017 exceeded 2016
+              as well as the target, with an increase of 62.5% with both measures.</p>
+            <p class="lead mb-2">There wasn't a noticeable increase in the number of returns despite the increase in the
+              number of orders.</p>
+            <p class="lead mb-2">Number of bikes sold in June of 2016 and 2017 both showed the sample pattern which is
+              that the second week of the month having the greatest number of bikes sold.</p>
+          </div>
+        </li>
+        <h5 class="featurette-heading fw-normal lh-1 my-4">3. Customer Details</span></h5>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">The customer details dashboard visualized the customers data including age group,
+              occupation, income level, total order placed and total revenue generated.</p>
+            <p class="lead mb-2">The below screenshot showed the customer who placed order in 2016.</p>
+            <div id="carousel3" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/customer_avg_income.png" class="d-block w-100" alt="customer_avg_income">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/customer_low_income.png" class="d-block w-100" alt="customer_low_income">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <h5 class="featurette-heading fw-normal lh-1 my-4">Insights</span></h5>
+        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+          <div class="me-auto">
+            <p class="lead mb-2">The majority customers are of average income and low income. And customers of average
+              income bring more profit than those are of low income. The average amount they spend in one order is
+              higher.</p>
+            <p class="lead mb-2">Accessories is the product category that has the most orders, followed by bikes and
+              clothes.</p>
+          </div>
+        </li>
+      </div>
+    </div>
+
+    <div class="px-4 pt-5 text-center">
+      <a class="btn btn-outline-secondary btn-lg" href="./index.html#personal-project" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+          class="bi bi-skip-backward-fill me-2" viewBox="0 0 16 16">
+          <path
+            d="M.5 3.5A.5.5 0 0 0 0 4v8a.5.5 0 0 0 1 0V8.753l6.267 3.636c.54.313 1.233-.066 1.233-.697v-2.94l6.267 3.636c.54.314 1.233-.065 1.233-.696V4.308c0-.63-.693-1.01-1.233-.696L8.5 7.248v-2.94c0-.63-.692-1.01-1.233-.696L1 7.248V4a.5.5 0 0 0-.5-.5" />
+        </svg>
+        Back to Personal Projects List
+      </a>
+    </div>
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

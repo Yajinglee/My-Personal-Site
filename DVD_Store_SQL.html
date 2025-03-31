@@ -50,8 +50,9 @@
 
   <section class="px-4 py-3 mt-5">
     <div class="px-4 pt-5 text-center">
-      <h2 class="featurette-heading fw-normal lh-1 mb-4">Web Scraping & Dashboard<span class="text-body-secondary"> |
-          Python, Tableau</span></h2>
+      <h2 class="featurette-heading fw-normal lh-1 mb-4">Sakila DVD Rental Data Analysis<span
+          class="text-body-secondary"> |
+          SQL, Python</span></h2>
     </div>
     <div class="container">
       <hr class="featurette-divider">
@@ -59,56 +60,56 @@
       <div class="col-md">
 
         <h2 class="featurette-heading fw-normal lh-1 my-4">Project Description</span></h2>
-        <p class="lead mb-4">The project was aimed to scrape all the books that won the Choice Awarded on GoodRead.com
-          and build a book selection dashboard for book lovers to choose the books and authors by awards, year, and
-          ratings for their next reading.</p>
+        <p class="lead mb-4">This project aimed to use SQL queries to explore the DVD rental dataset to gain an
+          understanding of inventory level, consumer behavior, store sales and performance.</p>
+        <p class="lead mb-4">Dataset was connected in MySQL Workbench, and then Jupyter Notebook was set up to access
+          data from MySQL databases by loading the SQL magic jupyter notebook extension.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <a type="button" class="btn btn-outline-secondary btn-lg px-4"
-            onclick="window.open('https://github.com/Yajinglee/Web-Scraping-Project','_blank')">Github repository</a>
+            onclick="window.open('https://github.com/Yajinglee/SQL-Projects','_blank')">Github repository</a>
         </div>
 
-        <h2 class="featurette-heading fw-normal lh-1 my-4">Project Details</span></h2>
+        <h2 class="featurette-heading fw-normal lh-1 my-4">Sakila Database Entity Relationship Diagram(ERD)</span></h2>
         <li class="borderless list-group-item d-flex justify-content-between align-items-start">
           <div class="me-auto">
-            <p class="lead mb-2">Retrieved 4000+ awarded book information from the website and saved to two csv files
-              containing awards and book details using Beautiful Soup, Selenium, and pandas.</p>
-            <p class="lead mb-2">Replaced values, split/added/renamed/dropped columns, and dropped duplicated values
-              using pandas.</p>
-            <p class="lead mb-2">Explored awarded books and authors through data manipulation and visualization using
-              pandas, matplotlib, and word cloud.</p>
-            <p class="lead mb-2">Built interactive dashboard to filter popular books and authors by year and award using
-              Tableau.</p>
+            <img
+              src="https://camo.githubusercontent.com/1715f8b479be522476836cc871f055d82cf668eb4ebea7575aa13e1604856336/68747470733a2f2f7777772e6a6f6f712e6f72672f696d672f73616b696c612e706e67"
+              class="d-block w-100" alt="Awarded_Books">
           </div>
         </li>
 
-        <h2 class="featurette-heading fw-normal lh-1 my-4">DataFrame</span></h2>
+        <h2 class="featurette-heading fw-normal lh-1 my-4">Analysis</span></h2>
         <li class="borderless list-group-item d-flex justify-content-between align-items-start">
           <div class="me-auto">
-            <p class="lead mb-2">Awarded books dataframe</p>
-            <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/Awarded_Books.png" class="d-block w-100" alt="Awarded_Books">
-            <p class="lead mb-2">Book details dataframe</p>
-            <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/Book_Details.png" class="d-block w-100" alt="Book_Details">
-          </div>
-        </li>
+            <p class="lead mb-2">Inventory summary:</p>
+            <p class="mb-2">What's the total value of all the inventory and total inventory value of each store?</p>
+            <p class="mb-2">How many film are there in each category of each store, and the total inventory count?</p>
+            <p class="mb-2">How many films are there in each rating?</p>
+            <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/Film_rating.png"
+              class="d-block w-80">
+            <p class="mb-2">How's the film inventory level looks like?</p>
+            <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/Inventory_level.png"
+              class="d-block w-80">
+            <p class="mb-2">Which actor/actress is in the most films in store inventory?</p>
 
-        <h2 class="featurette-heading fw-normal lh-1 my-4">Word cloud</span></h2>
-        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
-          <div class="me-auto">
-            <p class="lead mb-2">Python wordcloud library was used to create the word clouds.</p>
-            <p class="lead mb-2">The screenshot below shows the books that won the 'Best fiction' award in 2011 that has
-              ratings above 3.5.</p>
-            <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/best_fiction_book_wordcloud.png" class="d-block w-100" alt="best_fiction_book_wordcloud">
-          </div>
-        </li>
+            <p class="lead mb-2">Consumer behavior:</p>
+            <p class="mb-2">How many days do customer usually rent?</p>
+            <p class="mb-2">Do customer usually rent on weekdays or weekends?</p>
+            <p class="mb-2">What are the top films that customers rented for the longest days accumulatively, and rented
+              for the most times?</p>
+            <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/rental_day.png"
+              class="d-block w-80">
+            <p class="mb-2">Among the films that rented most frequently, are they usually rented on weekday or weekends?
+            </p>
+            <p class="mb-2">Who are identified as loyalty customers?</p>
 
-        <h2 class="featurette-heading fw-normal lh-1 my-4"><a
-            href="https://public.tableau.com/app/profile/yajing.li/viz/GoodReadsAwardedBooks/Dashboard?publish=yes">Tableau
-            Dashboard</a></span></h2>
-        <li class="borderless list-group-item d-flex justify-content-between align-items-start">
-          <div class="me-auto">
-            <p class="lead mb-2">The screenshot below shows the top books and authors winning the 'Best fantasy books'
-              award with the rating above 4.5 in 2022</p>
-            <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/Dashboard.png" class="d-block w-100" alt="dashboard">
+            <p class="lead mb-2">Sales Summary:</p>
+            <p class="mb-2">What's the total revenue for the time period and for each month?</p>
+            <img src="https://github.com/Yajinglee/My_Portfolio_Website/raw/main/images/store_sales.png"
+              class="d-block w-80">
+            <p class="mb-2">What's the most profitable move genres/rating?</p>
+            <p class="mb-2">Do we make the most money from long or short rentals?</p>
+
           </div>
         </li>
       </div>
