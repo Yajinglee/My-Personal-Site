@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="#summary"><img style="height: 30px" class="mx-2 rounded-circle" src="./images/profile-image.jpeg" alt="profile-image">Yajing Li</a>
@@ -20,16 +19,23 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="#certification">Certification</a>
+          </li>
+
+          <li class="nav-item mx-3">
             <a class="nav-link active" aria-current="page" href="#work-experience">Work Experience</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="#learning-journey">My Learning Journey</a>
           </li>
           <li class="nav-item mx-3">
             <a class="nav-link active" aria-current="page" href="#personal-project">Personal Projects</a>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link active" aria-current="page" href="#certification">Certification</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link active" aria-current="page" href="#learning-journey">My Learning Journey</a>
+            <a class="nav-link active" aria-current="page" href="#education">Education</a>
           </li>
           <li class="nav-item mx-3">
             <a class="nav-link active" aria-current="page" href="#contact-me">Get In Touch</a>
@@ -40,7 +46,7 @@
   </nav>
 
 <!-- Summary -->
-<section id="summary" class="px-4 pt-5 pb-3">
+<section id="summary" class="px-4 py-5">
   <img class="d-block mx-auto mb-4 profile-image" src="./images/profile-image.jpeg" alt="profile-image">
   <h1 class="display-5 fw-bold text-body-emphasis text-center">👋 Hi, I'm Yajing</h1>
   <div class="col-lg-8 mx-auto mt-5 text-left">
@@ -66,31 +72,116 @@
 </section> 
 
 <!-- Skills -->
-<section id="skills" class="px-4 py-4">
+<section id="skills" class="px-4 py-5">
   <div class="px-4 pt-5 text-center">
-    <h2 class="text-body-emphasis">Skills</h2>
-</div>
-  <div class="col-lg-8 mx-auto mt-5 text-left">
-      <p class="lead mb-4">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-code-square mx-4" viewBox="0 0 16 16">
-          <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-          <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"/>
-        </svg><span class="fw-bold">Coding: </span>SQL, Python, HTHM</p>
-      <p class="lead mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lightbulb icon-square mx-4" viewBox="0 0 16 16">
-              <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-          </svg><span class="fw-bold">Machine Learning: </span>Regression Analysis</p>
-      <p class="lead mb-4">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bar-chart-line-fill mx-4" viewBox="0 0 16 16">
-          <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"/>
-        </svg><span class="fw-bold">BI and Data Analysis: </span>Power BI, Power Query, Power Pivot, DAX, Excel</p>
+    <h2 class="text-body-emphasis mt-3">Skills</h2>
   </div>
+
+  <div class="col-lg-8 mx-auto mt-5 text-left">
+    <p class="lead my-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bar-chart-line-fill mx-4" viewBox="0 0 16 16">
+        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"/>
+      </svg>
+      <span class="fw-bold">BI and Data Analysis: </span>Power BI, Power Query, Power Pivot, DAX, Excel
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-11"><p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+          <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+        </svg>Proficient in developing interactive dashboards, data modeling, and transforming data using advanced tools.</p></div>
+    </div>
+    </div>
+
+    <p class="lead my-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-coin mx-4" viewBox="0 0 16 16">
+        <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z"/>
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+      </svg>
+      <span class="fw-bold">Financial Analysis: </span>KPI Analysis, Financial Modeling, Budgeting, Forecasting
+    </p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-11">
+          <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+          </svg>Skilled in KPI (Key Performance Indicator) analysis to evaluate business performance, identify areas for improvement, and drive strategic decision-making.</p>
+          <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+          </svg>Proficient in selecting and tracking relevant KPIs, interpreting data to provide actionable insights, and creating reports that support performance reviews and business goals.</p>
+          <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+          </svg>Familiar with financial modeling techniques to forecast and analyze trends, assess profitability, and support budget planning. </p>
+          <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+          </svg>Able to translate complex data into clear visualizations to communicate findings effectively and inform business strategies. </p>
+        </div>
+      </div>
+    </div>
+    <p class="lead my-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-code-square mx-4" viewBox="0 0 16 16">
+        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+        <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"/>
+      </svg>
+      <span class="fw-bold">Coding: </span>SQL, Python, HTML
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-11">
+          <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+          </svg>Strong understanding of SQL for extracting and analyzing data from databases. </p>
+          <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+          </svg>Utilize Python with libraries such as NumPy, Pandas, Matplotlib, and Seaborn for data analysis, manipulation, and visualization.</p>
+          <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+          </svg>Competent in HTML and experienced in using Bootstrap to build responsive and user-friendly websites.</p></div>
+        </div>
+    </div>
+
+    <p class="lead my-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lightbulb icon-square mx-4" viewBox="0 0 16 16">
+        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+      </svg>
+      <span class="fw-bold">Machine Learning: </span>Regression Analysis
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-11"><p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+          <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+        </svg>Familiar with regression models and applying them for predictive analysis and trend identification.</p></div>
+    </div>
+    </div>
+
+    <p class="lead my-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-git mx-4" viewBox="0 0 16 16">
+        <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
+      </svg>
+      <span class="fw-bold">Version Control: </span>Git
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-11"><p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen mx-2" viewBox="0 0 16 16">
+          <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+        </svg>Familiar with Git version control. Proficient in basic Git operations (clone, add, commit, push)</p></div>
+    </div>
+    </div>
+  </div>
+  
+  
 </section> 
 
-<!-- Education & certification -->
-<section id="certification" class="pt-5">
+<!-- certification -->
+<section id="certification" class="py-5">
   <div class="pt-3 text-center">
-    <h2 class="text-body-emphasis">Certification</h2>
+    <h2 class="text-body-emphasis mt-3">Certification</h2>
   </div>
   <div class="container">
     <!-- <hr class="featurette-divider"> -->
@@ -131,9 +222,9 @@
   </section>  
 
 <!-- Work Experience -->
-<section id="work-experience">
+<section id="work-experience" class="py-5">
     <div class="px-4 pt-5 text-center">
-        <h2 class="text-body-emphasis">Work Experience</h2>
+        <h2 class="text-body-emphasis mt-3">Work Experience</h2>
     </div>
     <!-- Working Experience -->
     <div class="container">
@@ -193,6 +284,7 @@
                 </ul>
             </div>
         </div>
+    </div>
     </div>
     <!-- Working Experience -->
     <div class="container">
@@ -345,7 +437,7 @@
 <!--Learning Journey-->
 <section id="learning-journey" class="mb-xl-7 my-5 py-5">
   <div class="pt-3 text-center">
-    <h2 class="text-body-emphasis">My Learning Journey</h2>
+    <h2 class="text-body-emphasis mt-3">My Learning Journey</h2>
   </div>
 
   <div class="container">
@@ -570,28 +662,26 @@
 </article>
 
      </div>
-     <div class="text-center">
-      <h4 class="text-body-emphasis">Driven by curiosity,</h4> 
-      <h4 class="text-body-emphasis">I embrace continuous learning</h4>
-      <h4 class="text-body-emphasis">To grow and adapt in an ever-evolving world.</h4>
 
-    </div>
+
+
   </div>
 
 </section>
 
 
 <!-- Personal Projects -->
-<section id="personal-project"class="px-4 mt-5">
+<section id="personal-project"class="px-4 mt-5 py-5">
   <div class="px-4 pt-5 text-center">
-    <h2 class="text-body-emphasis">Personal Projects</h2>
+    <h2 class="text-body-emphasis mt-3">Personal Projects</h2>
   </div>
   <div class="container">
     <!-- first project -->
     <hr class="featurette-divider">
     <div class="row featurette mx-auto my-5">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1 mb-4">Retail business analysis<span class="text-body-secondary"> | Power BI</span></h2>
+        <h2 class="featurette-heading fw-normal lh-1 mb-4">Retail business analysis<span class="text-body-secondary"></span></h2>
+        <p class="lead">Power BI</p>
         <p class="lead mb-5">This project was aimed to deliver a business intelligence solution and gain actionable insights from 8 csv files containing products, customers, sales and returns data of a retail business named Adventure Works.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <a type="button" class="btn btn-secondary btn-lg px-4 me-md-2" href="./Retail BI projects.html">More details</a>
@@ -631,7 +721,8 @@
     <hr class="featurette-divider">
     <div class="row featurette mx-auto my-5">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1 mb-4">Web Scraping GoodReads.com<span class="text-body-secondary"> | Python, Tableau</span></h2>
+        <h2 class="featurette-heading fw-normal lh-1 mb-4">Web Scraping GoodReads.com<span class="text-body-secondary"></span></h2>
+        <p class="lead">Python, Tableau</p>
         <p class="lead mb-5">The project was aimed to scrape all the books that won the Choice Awarded on GoodRead.com and build a book selection dashboard for book lovers to choose the books and authors by awards, year, and ratings for their next reading.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <a type="button" class="btn btn-secondary btn-lg px-4 me-md-2" href="./WebScraping.html">More details</a>
@@ -668,7 +759,8 @@
     <hr class="featurette-divider">
     <div class="row featurette mx-auto my-5">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1 mb-4">Sakila DVD rental data analysis<span class="text-body-secondary"> | SQL, Python(pandas, seaborn, matplotlib)</span></h2>
+        <h2 class="featurette-heading fw-normal lh-1 mb-4">Sakila DVD rental data analysis<span class="text-body-secondary"></span></h2>
+        <p class="lead mb-5">SQL, Python(pandas, seaborn, matplotlib)</p>
         <p class="lead">This project aimed to use SQL queries to explore the DVD rental dataset to gain an understanding of inventory level, consumer behavior, store sales and performance.</p>
         <p class="lead mb-5">Dataset was connected in MySQL Workbench, and then Jupyter Notebook was set up to access data from MySQL databases by loading the SQL magic jupyter notebook extension.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -708,28 +800,143 @@
   </div>
 </section>
 
+<!--Education-->>
+<section id="education" class="pt-5">
+  <div class="pt-3 text-center">
+    <h2 class="text-body-emphasis mt-3">Education</h2>
+  </div>
+  <div class="container">
+    <hr class="featurette-divider">
+
+      <div class="row mx-auto mt-5">
+          <div class="col-lg-2 d-flex align-items-start justify-content-center">
+              <img src="https://media.licdn.com/dms/image/v2/C560BAQFx0VIjYYSXBw/company-logo_200_200/company-logo_200_200/0/1645471386372/michigan_state_university_logo?e=1749081600&v=beta&t=yW6hhMiwsnoMODT8KSCwDUpbsT-Vh8t2Mg1Km0gRyZ0" class="rounded" height="100" alt="michigan-state-inc-logo">
+          </div>
+          <div class="col-lg-10 d-flex flex-column align-items-start">
+              <div><h4 class="fw-normal">Michigan State University</h4></div>
+              <div><p>From 2013 to 2015</p></div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+                <span> East Lansing, Michigan, USA</span>
+            </div> 
+          <div class="col-lg-2"></div>
+          <div class="col-lg-10 mt-3">
+              <ul class="list-group">
+                <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+                  <div class="me-auto">
+                    <div>
+                      <p class="lead fw-bold mb-1">Master's Degree in Hospitality Business</p>
+                      <p class="lead">Grade: Cumulative GPA: 3.93/4.00</p>
+                    </div>
+                  </div>
+                </li>
+                  <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+                    <div class="me-auto">
+                      <div>
+                        <p class="lead fw-bold mb-1">Course experience: </p>
+                        <p class="lead">Financial Management, Market Research, Asset Management, Feasibility Study, Hospitality Information Technology</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+                    <div class="me-auto">
+                      <p class="lead fw-bold mb-1">Activities and societies: </p>
+                      <p class="lead">Real Estate Investment Club, HVS workshop, Asset management workshop, Jones Lang LaSalle(JLL) Workshop</p>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="row mx-auto mt-5">
+    <div class="col-lg-2 d-flex align-items-start justify-content-center">
+        <img src="https://media.licdn.com/dms/image/v2/D4E0BAQESumC9ySWbYA/company-logo_200_200/company-logo_200_200/0/1666125777950/florida_international_university_logo?e=1749081600&v=beta&t=NlJZzbFpflMYy5hpJRc9iKO3txDd-SoIlzi5IOtgE7A" class="rounded" height="80" alt="michigan-state-inc-logo">
+    </div>
+    <div class="col-lg-10 d-flex flex-column align-items-start">
+        <div><h4 class="fw-normal">Florida International University</h4></div>
+        <div><p>From 2012 to 2013</p></div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg>
+          <span> Florida, USA</span>
+      </div> 
+    <div class="col-lg-2"></div>
+    <div class="col-lg-10 mt-3">
+        <ul class="list-group">
+            <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+              <div class="me-auto">
+                <div>
+                  <p class="lead fw-bold mb-1">Bachelar's Degree in Hospitality Management</p>
+                  <p class="lead">Grade: Cumulative GPA: 3.73/4.00</p>
+                </div>
+              </div>
+            </li>
+            <li class="borderless list-group-item d-flex justify-content-between align-items-start">
+              <div class="me-auto">
+                <p class="lead fw-bold mb-1">Course Experience: </p>
+                <p class="lead">Hospitality Accounting, Managerial Accounting, Property Management, Facility, Revenue Management</p>
+              </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="row mx-auto mt-5">
+  <div class="col-lg-2 d-flex align-items-start justify-content-center">
+      <img src="https://media.licdn.com/dms/image/v2/C560BAQFVkDXdVKxPNQ/company-logo_200_200/company-logo_200_200/0/1630612604869/_logo?e=1749081600&v=beta&t=2uHlHwT8KDMS6XGvgOPbLlOMNi-iCPlgnxF4e-WbEbg" class="rounded" height="80" alt="michigan-state-inc-logo">
+  </div>
+  <div class="col-lg-10 d-flex flex-column align-items-start">
+      <div><h4 class="fw-normal">Tianjin University of Commerce</h4></div>
+      <div><p>From 2009 to 2011</p></div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        </svg>
+        <span> Tianjin, China</span>
+    </div> 
+  <div class="col-lg-2"></div>
+  <div class="col-lg-10 mt-3 mb-5">
+  </div>
+</div>
+</div>
+
+
+  </div>
+  </section>
+
   <!-- Contact me -->
-  <section id="contact-me">
+  <section id="contact-me" class="py-5 my-0">
     <div class="container">
-      <div class="position-relative pt-5 text-center text-muted">
+      <div class="position-relative pt-5 text-center">
         <h2 class="text-body-emphasis mb-4">Get In Touch</h2>
         <p class="col-lg-11 mx-auto mb-4 lead">
           Thank you for visiting my website! 
         </p>
-        <p class="col-lg-11 mx-auto mb-4 lead">
+        <p class="col-lg-4 mx-auto mb-4 lead">
           I'm currently on an exciting journey of learning Business Intelligence and Data Science!
         </p>
         <!-- <p class="col-lg-11 mx-auto mb-4 lead">
           Keep learning, keep coding!
         </p>   -->
+
+        <!-- <a href="mailto:yajing.webdev@gmail.com" target="_blank" class="btn btn-light px-5 mb-5 mt-4" type="button">Contact Me</a> -->
+        <p class="col-lg-4 mx-auto mb-4 lead">Driven by curiosity, I embrace continuous learning to grow and adapt in an ever-evolving world.</p> 
+
         <a href="https://www.linkedin.com/in/liyajing/" target="_blank" class="btn btn-outline-dark px-4 mb-4">
           <i class="fab fa-linkedin"></i> Connect on LinkedIn
         </a>
-        <!-- <a href="mailto:yajing.webdev@gmail.com" target="_blank" class="btn btn-light px-5 mb-5 mt-4" type="button">Contact Me</a> -->
-      </div>
     </div>
-  </div>
+    </div>
 </section>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
