@@ -55,3 +55,19 @@ li.borderless {
   font-size: 70px;
   color: black;
 }
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 2;
+    letter-spacing: -.05rem;
+  }
+  
